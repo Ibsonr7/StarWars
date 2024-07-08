@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+}
+
+header {
+    width: 100%;
+   
+    display: flex;
+}
+
+header h1 {
+    font-size: 380%;
+    margin-top: 2%;
+    margin-left: 10%;
+    font-family: "Anton SC", sans-serif;
+    text-transform: capitalize;
+    color: white;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.characters {
+    list-style-type: none;
+    width: 90%;
+    display: flex;
+    gap: 3%;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+
+.characters li {
+    margin-bottom: 20px;
+    flex: 1 1 20%;
+    /* Ajusta a largura para 4 itens por linha, considerando o gap */
+    color: white;
+
+
+}
+
+.characters li p {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    font-size: 100%;
+}
+
+.characters img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* Exemplo para telas menores */
+@media (max-width: 768px) {
+    .characters li {
+        flex: 1 1 30%;
+        /* Ajusta para 2 itens por linha em telas menores */
+    }
+}
+
+
+@media (max-width: 630px) {
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    header h1{
+        margin-left: 0;
+        font-size: 300%;
+        
+
+    }
+
+    main{
+        margin-top: 0px;
+    }
+
+    .characters li {
+        flex: 1 1 35%;
+        /* Um item por linha em telas pequenas */
+    }
+}
+
+@media (max-width: 480px) {
+
+    header h1{
+        margin-left: 0;
+        font-size: 240%;
+        padding: 10px;
+        text-align: center;
+
+    }
+
+
+    .characters {
+        padding: 10%;
+    }
+
+    .characters li {
+        flex: 1 1 50%;
+        /* Um item por linha em telas pequenas */
+    }
+}
