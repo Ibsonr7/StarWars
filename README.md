@@ -1,0 +1,1 @@
+Este projeto utiliza JavaScript para consumir uma API pública que fornece informações detalhadas sobre personagens do universo Star Wars. Os dados são exibidos de maneira amigável e interativa, permitindo aos usuários explorar e aprender mais sobre seus personagens favoritos.
